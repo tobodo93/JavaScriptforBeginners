@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: var x 23;
+- text: var "x" = 12;
+- text: x = 22;
+- text: № = 121;
+- text: var = x;
+- text: var x=11;
+- text: Var x = 1%;
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

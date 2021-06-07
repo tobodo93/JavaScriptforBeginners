@@ -1,0 +1,54 @@
+<html>
+ <head></head>
+ <body>
+  In this lesson, we first look at the 
+  <b>methods of the String</b> class that allow you to use 
+  <b>regular expressions</b>:
+  <b></b>
+  <div>
+   <b><br></b>
+  </div>
+  <div>
+    
+   <b>search(</b>
+   <i></i>regexp
+   <i></i>
+   <b>)<br></b> 
+   <b>replace(</b>regexp, newString
+   <b>)<br></b> 
+   <b>match(</b>regexp
+   <b>)<br></b> 
+   <b>split(</b>divider
+   <b>)<br></b>
+   <div>
+    <br>
+   </div>
+   <div>
+    The first and simplest is the 
+    <b>search()</b> method. As an argument, we pass it a regular expression, and it returns the position number with which the match was found, or "-1" if no match was found.
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+    <pre><code class="language-javascript">var myString = "This is just test string";
+result = myString.search(/is/);</code></pre> 
+   </div>
+   <div>
+    <br>
+   </div>
+   <div></div>In the above example, the variable result is the number 2 (the count of positions starts at 0). 
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>Two important points: </b>
+  </div>
+  <div>
+   1. The search () method does not support global search, and the g flag in the regular expression will be ignored.
+   <br>2. If the argument is not a regular expression, it will be converted to it by passing it to the RegExp constructor. (RegExp objects will be discussed later).
+   <div></div>
+  </div>
+ </body>
+</html>

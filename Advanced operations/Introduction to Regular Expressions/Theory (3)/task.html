@@ -1,0 +1,65 @@
+<html>
+ <head></head>
+ <body>
+  <p>Individual symbols can be combined into <b>classes</b>. This is indicated by a set of characters enclosed in square brackets. For example, a regular expression <br></p>
+  <pre><code class="language-javascript">/[0123456789]/</code></pre>
+  <br>corresponds to any number.
+  <div>
+   <br>
+  </div>
+  <div>
+   Alternatively, you can specify the "^" sign before the character set, to define a regular expression that matches any character, EXCEPT those specified in parentheses - a class with negation. For example, expression 
+   <br>
+   <pre><code class="language-javascript">/[^0123456789]/</code></pre>will match any character EXCEPT digits.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   Also in classes, you can specify a range using the hyphen "-" to avoid listing all the characters. For example, all the numbers can be expressed by the following expression:
+   <br>
+   <pre><code class="language-javascript">/[0-9]/</code></pre>
+   <br>
+   <br>
+  </div>Some classes from character sets are so often used that they have been assigned special notation: 
+  <div>
+   <b>[...]</b> - any of the characters indicated in parentheses
+   <br>
+   <b>[^ ...]</b> - any other than the characters indicated in parentheses
+   <br>
+   <b>. (dot)</b> - any character except line feed or other line separator 
+   <b></b>
+  </div>
+  <div>
+   <b>\ w </b>- is equivalent to [a-zA-Z0-9_] (Any ASCII text character)
+   <b></b>
+   <br>
+   <b>\W</b> - is equivalent to [^ a-zA-Z0-9_] (Any character other than ASCII text characters)
+   <br>
+   <b>\s</b> - any whitespace character from Unicode
+   <br>
+   <b>\S</b> - any non-whitespace character from Unicode
+   <br>
+   <b>\d</b> - is equivalent to [0-9] (any ASCII digits)
+   <br>
+   <b>\D</b> - is equivalent to [^ 0-9] (all characters except ASCII digits)
+   <br>
+   <b>[\b]</b> - the designation of the symbol "slaughter"
+   <div>
+    <br>
+    <br>
+    <br>
+   </div>
+   <div>
+    Sequences of such control characters can also be combined into a class, for example, a regular expression 
+   </div>
+   <div>
+    <b><pre><code class="language-javascript">/[\w\d]/</code></pre></b>matches any ASCII character with letters or numbers.
+    <br>
+    <div>
+     <br>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

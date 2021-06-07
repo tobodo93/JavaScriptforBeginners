@@ -1,0 +1,18 @@
+<html>
+ <head></head>
+ <body>
+  <p><a rel="nofollow noopener noreferrer"></a></p>And the last method of the String object that allows you to work with regular expressions is 
+  <b>split()</b>
+  <br>
+  <br>It splits the string into an array of substrings, using as its delimiter the contents of the argument, which may also be a regular expression. For example, if you use two slashes as a separator, you can separate the protocol from the actual website name in the web address:
+  <pre><code class="language-javascript">var myString = "http://www.example.com/download/pictures";
+result = myString.split(/\/{2}/g);</code></pre> 
+  <br>
+  <p>The result of this expression is an array of two elements: <i>"http:"</i> и&nbsp; <i>"www.example.com/download/pictures";</i></p>
+  <p>In the same way, for example, you can split an array of numbers into an array:</p>
+  <pre><code class="language-javascript">var myString = "1234567890987654321"
+result = myString.split(/\B/g);</code></pre> 
+  <br>
+  <p>Using as a separator the definition of a symbol that is not a word boundary (a strange solution, but why not), we get an array in the result variable &nbsp;[1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 9, 8, 7, 6, 5, 4, 3, 2, 1].</p>
+ </body>
+</html>

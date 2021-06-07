@@ -1,0 +1,28 @@
+<html>
+ <head></head>
+ <body>
+  The 
+  <b>while</b> loop has a variation: the 
+  <b>do ... while</b> construct
+  <br>This design differs from the previous one in that the condition check operator is located 
+  <b>AFTER </b>the main body of the executable code, which ensures at least one execution of the code block.
+  <br>
+  <br>The syntax is as follows:
+  <br>
+  <br>
+  <pre><code class="language-javascript">do {
+&nbsp; executable code
+} while (variable == value);</code></pre> 
+  <br>Here is an example of using this construction:
+  <br>
+  <br>
+  <pre><code class="language-javascript">var x = 5;                     // set the initial value
+do {                           // start the loop
+&nbsp; console.log ("x =" + x);     // output data to the console
+&nbsp; x = x - 1;                   // decrease the value by 1
+} while (x&gt; = 1);              // check condition</code></pre> 
+  <br>In this case, the program will output to the console the value of the variable "x" in the range from 5 to 1, the result will be "54321"
+  <br>
+  <br>
+ </body>
+</html>

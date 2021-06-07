@@ -1,0 +1,23 @@
+<html>
+ <head></head>
+ <body>
+  Now let's look at what you can write regular expressions from.
+  <br>
+  <br>The first group is certainly 
+  <b>symbols</b>. As we have already said, all alphabetic and numeric symbols denote themselves. You can also enter some non-alphabetic characters using sequences that begin with a backslash.
+  <p><b>Numbers and letters</b> correspond to themselves<br><b>\0</b> - NUL (Corresponds \ u0000 to Unicode)<br><b>\t</b> - Tab (\ u0009)<br><b>\n</b> - Line feed (\ u000A)<br><b>\v</b> - Vertical tab (\ u000B)<br><b>\f</b> - Translate page (\ u000C)<br><b>\r</b> - Carriage return (\ u000D)<br><b>\xnn</b> - The character from the Latin set, given by the hexadecimal number nn<br><b>\unnnn - The Unicode character specified by the hexadecimal number nnnn</b><br><b>\cX</b> - Control character "X", for example \ cJ is equivalent to \ n</p>
+  <p> The following symbols are also used in regular expressions: <br></p>
+  <pre><code class="language-javascript">^ $ . * + ? = ! : | \ / ( ) [ ] { }</code></pre>In the next steps, we'll take a closer look at their meaning and application in combination with other symbols, but now we need to remember that to determine the meaning of these symbols literally, i.e. "themselves", it is necessary to put a backslash symbol before them.
+  <div>
+   <br>
+  </div>
+  <div>
+   For example, if you want to write a regular expression that will contain a backslash character, you must put this character in the expression, preceded by the same backslash character. As a result, this regular expression will look like this:
+  </div>
+  <div>
+   <pre><code class="language-javascript">/\\/</code></pre>
+   <br>
+   <br>
+  </div>
+ </body>
+</html>

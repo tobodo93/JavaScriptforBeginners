@@ -1,0 +1,9 @@
+type: code
+files:
+- name: task.js
+  visible: true
+  text: "function testA(a) {         \n\n    var x=\"\";\n\n    // Please, write down\
+    \ your code here\n\n    return x;\n}"
+  learner_created: false
+status: Unchecked
+record: -1

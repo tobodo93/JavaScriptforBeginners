@@ -1,0 +1,13 @@
+type: code
+files:
+- name: task.js
+  visible: true
+  text: |-
+    function testFactorial(a) {
+        var x="";
+        // Put your code here
+        return x;
+    }
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,9 @@
+type: code
+files:
+- name: task.js
+  visible: true
+  text: "function testErrorFunc(a, func) {         \n\n    //Put your code here\n\n\
+    \    return x;\n}"
+  learner_created: false
+status: Unchecked
+record: -1

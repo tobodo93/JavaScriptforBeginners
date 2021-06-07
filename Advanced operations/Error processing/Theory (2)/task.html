@@ -1,0 +1,29 @@
+<html>
+ <head></head>
+ <body>
+  Once an exception is created, the JavaScript interpreter breaks the normal execution of the code and begins to search for an exception handler - 
+  <b>try / catch / finally</b> constructs.
+  <br>
+  <br>The syntax of this construct is as follows:
+  <br>
+  <br>
+  <pre><code class="language-javascript">try {
+&nbsp; // code that you need to "try"
+&nbsp; // in this code an exception can be thrown
+} catch (exception_variable) {
+&nbsp; // at this point the code is written, which is executed only in case of detection
+&nbsp; // exceptions in the previous block "try"
+&nbsp; // if an exception occurs, the exception_variable variable will be passed
+&nbsp; // code of the error that occurred, for example, the argument to the throw statement
+} finally {
+&nbsp; // The code in this block will always be executed, regardless of the result of the end of the try block:
+&nbsp; // and when completed without error, and when completed with an error, and when completed on any branch statement
+&nbsp; // (break, continue, return)
+}</code></pre> 
+  <br>The 
+  <b>catch </b>and 
+  <b>finally </b>blocks are not strictly mandatory, but at least one of them must be present in the construction.
+  <br>
+  <br>
+ </body>
+</html>

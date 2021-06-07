@@ -1,0 +1,17 @@
+<html>
+ <head></head>
+ <body>
+  <p>Now we can examine in more detail the <strong>operator that searches through all the properties of the object</strong>, just mentioned in the previous module - the <strong>for .. in</strong> construct.<br> <br> The command syntax is as follows:<br> <em>for (<strong>key</strong> in <strong>object</strong>)</em>, where <strong><em>key</em></strong> is the name of the property, <em><strong>object</strong></em> is the name of the object, and access to the contents of the property is done through the expression<strong> </strong><em><strong>object [key]</strong></em>.<br> <br> Let's look at an example, creating an object with method that outputs all the properties of this object to the console:<br> &nbsp;</p> 
+  <pre><code class="language-javascript">var person = {
+name: "Ivan",
+age: 25,
+hiredYear: 2017
+}
+
+person.sayAll = function () {
+&nbsp;  for (var i in this) {
+console.log (i + " is " + this [i]);
+&nbsp;  }
+}</code></pre>
+ </body>
+</html>

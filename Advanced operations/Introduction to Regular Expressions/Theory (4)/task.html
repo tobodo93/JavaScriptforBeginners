@@ -1,0 +1,41 @@
+<html>
+ <head></head>
+ <body>
+  <p>The templates described above can be used not only to describe single character combinations, but also for arbitrarily multiple repetitions. This is called "<b>quantification</b>". </p>
+  <p><b></b>For quantification in regular expressions, there is a set of special combinations enclosed in braces. This combination in curly brackets should follow immediately the described pattern. For example, a combination<br><b></b></p>
+  <pre><b><code class="javascript">/\d{4}/</code></b></pre>corresponds to a number consisting of 4 digits.Let's look at some control combinations for repetitions: 
+  <div>
+   <b>{n}</b> - exactly n instances of the template 
+  </div>
+  <div>
+   <b>{n,}</b> - denotes n or more instances of the template
+   <br>
+   <b>{n, m}</b> - means at least n and not more than m instances of the template
+   <br>
+   <b>?</b> - denotes zero or one template instance (equivalent to the expression {0,1}) 
+  </div>
+  <div>
+   <b>+</b> - denotes 1 or more instances of a template (is equivalent to the expression {1,})
+   <br>
+   <b>*</b> - denotes zero or more instances of the template (equivalent to the expression {0,})
+   <br>
+   <br>The repetition symbols indicated in the table correspond to the maximum possible number of matches. For example, expression
+   <pre><code class="language-javascript">/х{1,}/</code></pre>
+   <br>applied to the line "xxx" will correspond to the maximum number of correspondences, i.e. all three letters "x", found on the line. This is called "greedy" repetition. ("greedy" quantification).
+   <p>If we want to limit the search to the first occurrence, we can use the so-called "non-greedy", or "lazy" quantification. To do this, after the control combination of repetitions, the symbol "?" Is put. Thus the expression <br> </p>
+   <pre><code class="language-javascript">/х{1,}?/</code></pre>
+   <br>will correspond only to the first match, i.e. only the first letter "x" in the row. 
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>An important point! The sign of "laziness" acts only on that quantifier (subpattern) in the template, after which it stands, all other quantifiers remain "greedy."</b>
+   <div>
+    <b></b>
+    <br>
+    <br>
+   </div>
+  </div>
+ </body>
+</html>

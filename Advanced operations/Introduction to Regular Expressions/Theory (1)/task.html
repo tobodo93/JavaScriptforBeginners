@@ -1,0 +1,28 @@
+<html>
+ <head></head>
+ <body>
+  <p><b></b></p>
+  <b>Creating RegExp objects</b>
+  <br>
+  <br>RegExp objects can be created using the 
+  <b>RegExp() constructor</b>, or by 
+  <b>using literals</b>. But if, for example, string literals are specified in the form of characters enclosed in quotation marks, the regular expression literals are specified by a pair of slash characters "/". For example, like this:
+  <br>
+  <br>
+  <pre><code class="language-javascript">var myPattern = /q$/;                 // Create a regular expression with a literal</code></pre>
+  <br>
+  <div>
+   In this example, we created a new object of type RegExp with the literal and assigned it to the variable myPattern. This pattern matches any string ending with the character q.
+   <br>
+   <br>To create the same object using the constructor, we need to write the following expression:
+   <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <pre><code class="language-javascript">var myPattern = new RegExp ("q$");    // Create a regular expression using the constructor</code></pre>
+   <br>
+  </div>
+ </body>
+</html>

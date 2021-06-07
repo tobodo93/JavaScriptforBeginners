@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: The exception is caught by the catch command
+- text: The exception is handled by throw-catch-finally
+- text: You can throw almost any type of data as an exception
+- text: The code in the finally block is executed depending on the result of the execution
+    of the first part of the construction
+- text: The exception is thrown by the Thrash command
+- text: When handling an exception, there must be at least one catch or finally block
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

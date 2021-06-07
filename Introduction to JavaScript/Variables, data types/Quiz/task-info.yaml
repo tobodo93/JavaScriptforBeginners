@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: example
+- text: $example
+- text: _example
+- text: Example
+- text: ex@mple
+- text: 1example
+- text: example++
+- text: example-example
+- text: '&amp;example'
+- text: ExAmple
+- text: EXAMPLE
+- text: ex_ample
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

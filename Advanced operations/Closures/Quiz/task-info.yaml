@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: If inside the normal function, nested in another function, make a call to
+    the input parameter of the external function, then it will be called the closure
+- text: The closure stores the actual value of the variables obtained from the function
+    in which it is embedded
+- text: If inside the normal function, nested in another function, make a call to
+    a variable in the external function, then it will be called the closure
+- text: After the completion of the function, the closure loses access to its data
+- text: A closure stores a reference to variables that are in a function external
+    to it
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

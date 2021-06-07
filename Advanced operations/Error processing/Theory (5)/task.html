@@ -1,0 +1,31 @@
+<html>
+ <head></head>
+ <body>
+  Also we need to consider the standard Error object, which is used when using exceptions.
+  <br>
+  <br>In general, almost any object can be thrown by the throw command, however, when standard errors occur, the object of the 
+  <b>Error </b>class or its subclasses is thrown out.
+  <br>
+  <br>The syntax that we will look at is as follows:
+  <br>
+  <br>
+  <pre><code class="language-javascript">new Error (message);</code></pre>
+  <br>This command creates a new instance of the 
+  <b>Error</b> object, and the text "
+  <i>message</i>" is written to the property "message" of the object.
+  <br>
+  <br>The simplest example of calling the Error constructor is as follows.
+  <br>
+  <br>
+  <pre><code class="language-javascript">try {
+&nbsp; throw new Error ('Something went wrong!');
+} catch (e) {
+&nbsp; console.log (e.name + ':' + e.message);
+}</code></pre>
+  <br>
+  <br>In this example, we created an 
+  <b>Error </b>object with the name 
+  <i>Error </i>and the text of the error message "
+  <i>Something went wrong!</i>".
+ </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+ <head></head>
+ <body>
+  <p>You can also add&nbsp;<strong>comments</strong>&nbsp;to the&nbsp;JavaScript code.</p> 
+  <p>These are the lines marked in a special way, which are not considered&nbsp;as executable code by the browser. Thus, you can either make&nbsp;text comments or mark some pieces of code to prevent them from running during debugging.</p> 
+  <p>Comments can be&nbsp;<strong>single-line</strong> or&nbsp;<strong>multi-line</strong>.</p> 
+  <p><strong>Single-line comments</strong> begin with two slashes "//" and prevent the&nbsp;code execution on this line. Here is an example of using a single-line comment:</p> 
+  <pre><code class="language-xml">&lt;script&gt; // This is a text comment alert("Hello World"); &nbsp; // This code will be executed. // alert("Hello World"); But this code will not // It commented out &lt;/script&gt;</code></pre> 
+  <p><strong>Multi-line comments</strong> begin with one slash and an asterisk "<strong>/ *</strong>" and end with the reverse combination - an asterisk and a slash "<strong>* /</strong>". Everything that is written between these characters will be considered as a comment by the browser. It looks as follows:</p> 
+  <pre><code class="language-xml">&lt;script&gt;
+/* Here isthe begin of comment
+alert("Hello World"); This code will not be executed.
+alert("Hello World"); And this one too.
+This is the end of comment */  
+
+ alert("Hi World"); // This code will be executed
+&lt;/script&gt;</code></pre>
+ </body>
+</html>

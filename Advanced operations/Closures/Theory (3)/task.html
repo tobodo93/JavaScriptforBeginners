@@ -1,0 +1,20 @@
+<html>
+ <head></head>
+ <body>
+  <p><b></b></p>
+  <b>2. Closures do not store the contents of external function variables, but references to these variables.</b>
+  <br>
+  <br>Let's consider in this context the classic example of closure, described in most sources - the counter.
+  <pre><code class="language-javascript">function makeCounter(initialValue) { 
+&nbsp; var currentState = initialValue;
+&nbsp; return function () {
+&nbsp; &nbsp; currentState = currentState + 1;
+&nbsp; &nbsp; return currentState;
+&nbsp; }
+}</code></pre> In this case, we described a function inside which there is a closure that increments the counter every time and returns it. Let's see what happens if you call it many times in a row.
+  <pre><code class="language-javascript">var myCounter = makeCounter(5);  // Create an instance of the counter and set its initial value = 5
+console.log(myCounter());        // The console will display the value 6
+console.log(myCounter());        // The console will display the value 7 
+console.log(myCounter());        // The console will display the value 8</code></pre>
+ </body>
+</html>

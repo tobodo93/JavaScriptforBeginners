@@ -1,0 +1,13 @@
+type: stepik
+title: JavaScript for Beginners
+language: English
+summary: This course covers the basics of programming in JavaScript, as well as some
+  of the tools and data models that are necessary for the practical use of JavaScript.<br/><br/>Learn
+  more at <a href="https://stepik.org/course/3432">https://stepik.org/course/3432</a>
+programming_language: JavaScript
+content:
+- Introduction to JavaScript
+- Standard objects
+- Advanced operations
+- Conclusion
+mode: Study

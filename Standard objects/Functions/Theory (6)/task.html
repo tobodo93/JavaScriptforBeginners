@@ -1,0 +1,19 @@
+<html>
+ <head></head>
+ <body>
+  A function that has a name can call itself. Such functions are called 
+  <b>recursive</b>.
+  <br>
+  <br>For example, in the following example, the function uses a recursive call to calculate the factorial:
+  <br>
+  <br>
+  <pre><code class="language-javascript">function factorial (x) {      // Function declaration
+  if (x &lt;= 1) return 1;       // Check the condition for the end of the calculation
+  return x * factorial (x-1); // Call the same function with a reduced by 1 argument
+}</code></pre> 
+  <br>
+  <b>An important note</b>: in recursive functions, you need not forget about the condition for terminating recursion, otherwise the code will "get stuck".
+  <br>
+  <br>In the example above, such a condition is a check that x &lt;= 1.
+ </body>
+</html>

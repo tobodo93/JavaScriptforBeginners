@@ -1,0 +1,19 @@
+<html>
+ <head></head>
+ <body>
+  The date and time values ​​can be easily managed using the methods available for the Date object. (These methods will be discussed in more detail in the next steps.)
+  <br>
+  <br>In the following example, we will set a date in the Date object:
+  <br>
+  <br>
+  <pre><code class="language-javascript">var myDate = new Date (); // Declare a Date variable
+myDate.setFullYear (2017, 4, 22); // Assign to it the date value - May 22, 2017</code></pre> 
+  <br>And now we'll try to move the date 10 days forward:
+  <br>
+  <br>
+  <pre><code class="language-javascript">var myDate = new Date (); // Declare a Date variable
+myDate.setFullYear (2017, 4, 22); // Assign to it the date value - May 22, 2017
+myDate.setDate (myDate.getDate () + 10); // Set the new date value, get the previous value and add 10.</code></pre> 
+  <br>Pay attention - if the days increase will change the month and year, this will be done automatically, by the method setDate ().
+ </body>
+</html>

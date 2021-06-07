@@ -1,0 +1,30 @@
+<html>
+ <head></head>
+ <body>
+  Closures have two important properties.
+  <br>
+  <br>
+  <b>1. Closure can access variables of its external function even after its completion.</b>
+  <br>
+  <br>In practice, this means that even after the execution of the external function is completed, the internal one can still be called and has access to the variables of the external function.
+  <br>
+  <br>Let's look at an example:
+  <pre><code class="language-javascript">function pirate() {
+&nbsp; &nbsp; var pirateName = "noname";
+&nbsp; &nbsp; return {
+&nbsp; &nbsp; &nbsp; &nbsp; getName: function() {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return pirateName;
+&nbsp; &nbsp; &nbsp; &nbsp; },
+&nbsp; &nbsp; &nbsp; &nbsp; setName: function(newName) {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pirateName = newName;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; }
+}</code></pre> 
+  <br>We described a function with two closures: one returns the value of the variable from the calling function, the second - changes it. Let's see what happens in practical use:
+  <pre><code class="language-javascript">var newPirate = pirate();
+console.log(newPirate.getName());    //Output the current contents of the variable - there is the "noname":
+newPirate.setName("Jack Sparrow");   //Change the value of the variable to "Jack Sparrow"
+console.log(newPirate.getName()); &nbsp; &nbsp;//Display the current contents of the variable - get "Jack Sparrow"</code></pre> 
+  <p><br>In this example, we see that the closures got access to the variable of the external function after it was completed.</p>
+ </body>
+</html>

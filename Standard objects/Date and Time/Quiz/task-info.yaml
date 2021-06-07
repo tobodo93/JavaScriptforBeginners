@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: The getDay () method returns the day of the week of the date
+- text: Objects of type Date can be compared among themselves
+- text: The methods getYear () and getFullYear () will display the current year, respectively,
+    "17" and "2017"
+- text: The range of all date parameters - months, days, hours, minutes, seconds,
+    starts from 0
+- text: After declaring the variable var myDate = new Date (); the variable will be
+    the current date and time
+- text: The setDay () method sets the day of the week in the date
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: If you assign any code to a property, then we get a method
+- text: The <i> this </i> keyword is used to access the object from which it is called
+- text: 'To declare an object, you can use the <code>var person : Object ();</code>'
+- text: Function <code>function Person (name, age, year) {this.name = name;}</code>
+    will create a constructor for the person
+- text: The expression <code>delete myObject.myProperty;</code> completely removes
+    the object <i>myObject</i>
+- text: To create an object, constructors and destructors are used
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

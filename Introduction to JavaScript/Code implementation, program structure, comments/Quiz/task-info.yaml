@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: The JavaScript code in the .js file to be attached must be surrounded by a
+    &lt;script&gt; &lt;/script&gt; tag
+- text: The JavaScript code in the HTML file should be framed by the &lt;script&gt;
+    &lt;/script&gt; tag
+- text: One-line comment is obtained if you put the symbols "* /" at the beginning
+    of the line
+- text: The JavaScript sentence must necessarily end with a ";"
+- text: Its a good programming practice to write several JavaScript statements in
+    one line
+- text: You can conclude a sequence of statements that are executed together in curly
+    brackets.
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: The result of the split() method is an array
+- text: The Search(regex) method finds a substring that matches the regex pattern
+    and returns it
+- text: The Match() method returns true if regexp matches the string
+- text: If you pass a string to the Replace and Search methods instead of a regular
+    expression, it will be converted to a regular expression
+- text: The Search(regex) method returns "0" if no substring is found
+- text: The Replace(regex, str) method supports global search
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

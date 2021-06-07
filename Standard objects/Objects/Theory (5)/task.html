@@ -1,0 +1,46 @@
+<html>
+ <head></head>
+ <body>
+  To 
+  <b>add a new object property</b>, there are also two options.
+  <br>
+  <br>
+  <pre><code class="language-javascript">person.name = "Ivan"</code></pre>
+  <br>or
+  <div>
+   <br>
+   <pre><code class="language-javascript">person ['name'] = "Ivan"</code></pre>
+   <br>You can also 
+   <b>add properties immediately when creating an objec</b>t by specifying a list of properties in curly braces:
+   <br>
+   <br>
+   <pre><code class="language-javascript">var person = {
+name: "Ivan",
+age: 25,
+hiredYear: 2017
+}</code></pre> 
+   <br>Accordingly, 
+   <b>to access this property</b>, you can also use two options:
+  </div>
+  <div>
+   <i>objectName.PropertyName</i>, for example:
+   <br>
+   <pre><code class="language-javascript">console.log (person.name);</code></pre>
+   <br>or 
+   <i>objectName[propertyName], for example:</i>
+   <br>
+   <pre><code class="language-javascript">console.log (person['name'])</code></pre>
+   <br>If we try to access a property that the object does not have, then the result will be 'undefined', the so-called "undefined value".
+   <br>
+   <br>
+   <b>To delete a property</b>, use the 
+   <i>delete</i> operator:
+   <br>
+   <br>
+   <pre><code class="language-javascript">delete person.name;</code></pre>
+  </div>
+  <div>
+   <br>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: Result of x &gt;= 7 is true
+- text: Result of x &lt;= 7 is true
+- text: Result of  x &lt;= 8 is false
+- text: Result of x == 8 is false
+- text: Result of x &gt; 8 is false
+- text: Result of x != 8 is true
+- text: Result of x === '7' is true
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

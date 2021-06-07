@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: The only way to get elements from the middle of an array is the <code>slice()</code>
+- text: The <code>pop()</code> method removes one element from the array - the last
+    one
+- text: The <code>push()</code> method adds an element to the beginning of the array
+- text: The <code>delete()</code> operator completely removes the element, the number
+    of elements in the array is reduced by 1
+- text: The only method that allows you to add elements to the middle of an array
+    is the <code>splice()</code>
+- text: The numbering of elements in the array begins with 0
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

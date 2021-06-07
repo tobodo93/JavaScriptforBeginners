@@ -1,0 +1,47 @@
+<html>
+ <head></head>
+ <body>
+  To work with dates and time in JavaScript, use the 
+  <b>Date objec</b>t.
+  <br>
+  <br>The 
+  <b>Date object</b> is created using the 
+  <b>Date()</b> constructor. There are several ways to create an object of this type:
+  <br>
+  <br>
+  <pre><code class="language-javascript">var x = new Date () // The object will get the current date and time
+var x = new Date (milliseconds) // The number of milliseconds counting from January 1, 1970
+var x = new Date (stringData)
+var x = new Date (year, month, day [, hours, minutes, seconds, milliseconds])</code></pre> 
+  <br>
+  <br>Note that the parameters specified in square brackets are optional.
+  <br>
+  <br>
+  <b>year</b> - format YYYY
+  <br>
+  <b>month</b> - from 0 to 11
+  <br>
+  <b>day </b>-
+  <b> </b>from 1 to 31
+  <br>
+  <b>hours </b>- from 0 to 23
+  <br>
+  <b>minutes </b>-
+  <b> </b>from 0 to 59
+  <br>
+  <b>seconds </b>- 
+  <b></b>from 0 to 59
+  <br>
+  <b>milliseconds</b> - from 0 to 999
+  <br>
+  <br>Let's look at some examples of creating a Date object and show in the comments - which will be displayed on the page when using the 
+  <b>document.write (myDate)</b> command:
+  <br>(the document.write () command has not been considered in detail, at this stage it is sufficient to understand that it outputs what is passed to it in an HTML document.)
+  <br>
+  <br>
+  <pre><code class="language-javascript">var myDate = new Date () // Mon May 15 2017 19:20:25 GMT + 0300 (RTZ 2 (winter))
+var myDate = new Date ("December 14, 1975 12:10:00") // Sun Dec 14 1975 12:10:00 GMT + 0300 (RTZ 2 (winter))
+var myDate = new Date (1989, 6, 14) // Fri Jul 14 1989 00:00:00 GMT + 0400 (RTZ 2 (summer))
+var myDate = new Date (1998, 6, 14, 11, 20, 00) // Tue Jul 14 1998 11:20:00 GMT + 0400 (RTZ 2 (summer))</code></pre>
+ </body>
+</html>

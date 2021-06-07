@@ -1,0 +1,42 @@
+<html>
+ <head></head>
+ <body>
+  But the methods of the String object are more than enough. Let's look at them in groups:
+  <br>
+  <br>
+  <b>Methods for accessing the symbols of the String object</b>:
+  <br>There are two ways to access the symbols of a String object.
+  <br>
+  <br>Basic is access through the 
+  <b>.charAt method</b>
+  <br>For example:
+  <br>
+  <br>
+  <pre><code class="language-javascript">var cat = "Cat";
+console.log (cat.charAt (1));</code></pre> 
+  <br>This code will output to the console a character with index 1 in the string - 'a' (remember that the numbering always starts with 0)
+  <br>
+  <br>
+  <div>
+   We also need to consider another method, related to the previous one.
+   <br>
+   <b>charCodeAt</b> (index) - returns the character code at index
+   <br>The call to it looks similar to the previous method, but on the output we have not the character itself, but its unicode.
+   <br>
+   <br>The second way to access characters is to 
+   <b>access the string as an array</b> (we'll look at the arrays in the next lesson):
+   <br>
+   <br>
+   <pre><code class="language-javascript">var cat = "Cat";
+console.log (cat [1]);</code></pre> 
+   <br>One 
+   <b>important point to note</b>, in contrast to most non-scripting languages ​​in JavaScript, once a created string can not be changed, it can only be read. To change the line, you need to reassign it completely:
+   <br>
+   <br>
+   <pre><code class="language-javascript">var cat = "Cat";
+cat = cat.charAt (2) + cat.charAt (1) + cat.charAt (0);</code></pre> 
+   <br>
+   <br>The code in this example will turn the contents of the string "backwards".
+  </div>
+ </body>
+</html>

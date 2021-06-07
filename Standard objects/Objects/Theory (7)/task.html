@@ -1,0 +1,24 @@
+<html>
+ <head></head>
+ <body>
+  Usually, we need the method not just perform some actions, but use some properties of the object in which it is stored. In order
+  <b> to access the object properties</b> from the method, the 
+  <i><span style="color: #66cc66;"><b>this</b></span></i> keyword is used. The word 
+  <span style="color: #66cc66;"><i><b>this</b></i></span> in no way is associated with the object itself, it merely denotes the object that caused this function. In this example, the sayName function will print out the phrase "
+  <i>My name is Ivan</i>":
+  <br>
+  <br>
+  <pre><code class="language-javascript">var person = {
+  name: "Ivan",
+  age: 25,
+  hiredYear: 2017
+}</code></pre> 
+  <br>
+  <br>
+  <br>
+  <pre><code class="language-javascript">person.sayName = function () {
+  console.log ("My name is" + this.name);
+}</code></pre>
+  <span style="color: #66cc66;"><i></i></span>
+ </body>
+</html>

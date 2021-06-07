@@ -1,0 +1,32 @@
+<html>
+ <head></head>
+ <body>
+  Speaking of loops and exit from them, you should also mention such a tool as 
+  <b></b>labels
+  <b></b>. 
+  <b>Labels in JavaScript</b> only work for 
+  <b>loops </b>and the 
+  <b>switch </b>statement, so that they can not make a full transition to any point in the program (like "goto" loops in other programming languages). You can use a label to identify a loop, and then use the 
+  <code>break</code> or 
+  <code>continue</code> statements to indicate whether a program should interrupt the loop or continue its execution.
+  <br>
+  <br>For example:
+  <br>
+  <br>
+  <pre><code class="language-javascript">label_1: 
+for (i = 1; i &lt;= 50; i ++) {
+&nbsp; while (i &lt; a) {
+    console.log (i);
+    if (i == a) {
+      break label_1;
+    }
+
+    if (i == b) {
+      continue label_1;
+    }
+  }
+}</code></pre> 
+  <br>
+  <br>In this example, if the i value is equal to the value of the variable "a", the outer for loop will be interrupted, and if the i value is equal to the value of the variable "b", it will exit the current iteration and continue the work of the outer loop.
+ </body>
+</html>

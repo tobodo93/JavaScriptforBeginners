@@ -1,0 +1,17 @@
+<html>
+ <head></head>
+ <body>
+  In the second part of the lesson, we will more closely consider the 
+  <b>RegExp object</b> - its properties, methods and constructor.
+  <br>
+  <br>Let's start with the designer. As you remember, the 
+  <b>constructor</b> is a method that takes an argument as an input, and creates an object of the required type at the output.
+  <br>
+  <br>The 
+  <b>RegExp constructor</b> can accept a string on the input, the contents of which will be converted to a regular expression. The line must contain the contents of the regular expression, i.e. the text that is usually between two slashes.
+  <pre><code class="language-javascript">var myPattern = new RegExp("q$");        // Create a template that finds the letter "q" at the end of the line</code></pre> 
+  <p>Also, you can pass a second, optional argument to the constructor, in which you can specify flags. For example:</p>
+  <pre><code class="language-javascript">var myPattern = new RegExp("q$","g");    // Create the same template, but add the global search flag</code></pre> 
+  <p><b>An important point!</b> If the text contains a backslash character "<b>\</b>", it must be preceded by the same character (ie, it will be "<b>\\</b>"), since, as we recall, the backslash is used in regular expressions to specify control characters.</p>
+ </body>
+</html>

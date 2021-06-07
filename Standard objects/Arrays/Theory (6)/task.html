@@ -1,0 +1,32 @@
+<html>
+ <head></head>
+ <body>
+  The next method will be considered a separate step because of its universality and convenience.
+  <br>
+  <br>
+  <b>Array.splice</b>() is a universal function that allows you to remove elements from an array and insert new ones.
+  <br>
+  <br>The following data can be passed as an argument to this method:
+  <br>
+  <b>1 argument</b> is the position of the element from which the method action begins
+  <br>
+  <b>2 argument</b> - the number of elements to be deleted, starting from the starting position specified in the previous argument. (If the second value is not specified, all elements will be deleted, starting with the first argument).
+  <br>
+  <b>3 argument</b> and subsequent (any number) are the elements of the array that will be added starting from the position specified in the first argument.
+  <br>
+  <br>An important point is that the method changes the original array, but returns an array of deleted elements. If no items are deleted, an empty value is returned.
+  <br>
+  <br>As an example, let's consider the work of this method on an array
+  <br>
+  <pre><code class="language-javascript">var myArray = ["Ivanov", "Petrov", "Sidorov", "Kuznetsov"];</code></pre>
+  <br>We obtain the following results:
+  <br>
+  <br>
+  <pre><code class="language-javascript">// returns ["Sidorov", "Kuznetsov"], the original array will be equal to ["Ivanov", "Petrov"]
+myArray.splice (2, 2);
+// return ["Petrov", "Sidorov", "Kuznetsov"], the original array will turn into ["Ivanov"]
+myArray.splice (1);
+ // returns an empty value [], the element ["Ivanov", "Petrov", "Smith", "Sidorov", "Kuznetsov"] will be added to myArray
+myArray.splice (2, 0, "Smith");</code></pre>
+ </body>
+</html>

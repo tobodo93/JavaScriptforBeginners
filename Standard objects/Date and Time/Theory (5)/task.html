@@ -1,0 +1,28 @@
+<html>
+ <head></head>
+ <body>
+  <p><b></b></p>
+  <b>Converting Data</b> of a Date Object
+  <br>
+  <br>
+  <b>Date.parse</b>() - converts a string with a date, for example "Jul 05, 2017" and returns the number of milliseconds that passed from midnight on January 1, 1970. If the string could not be converted, it returns NaN.
+  <br>
+  <br>
+  <pre><code class="language-javascript">var myDate = new Date ();
+document.write (myDate.setTime (Date.parse ("22 May 2017 11:11"))); // Display the "1495613460000"
+document.write (myDate); // Display the following: Mon May 22 2017 11:11:00 GMT + 0300 (RTZ 2 (winter))</code></pre> 
+  <br>
+  <b>toLocaleString</b>() - Returns an object of type String containing a date in long format, for example "10 January 2017 12:26:01" in accordance with the regional settings of the operating system in which the script is run. Outwardly, the difference will be, for example, between countries where the 12-hour time designation is common, in comparison with the 24-hour time.
+  <div>
+   <br>
+  </div>
+  <div>
+   <b>toLocaleTimeString</b>() - converts time data to a string, using the formatting settings of the operating system in which the script is executed.
+  </div>
+  <div>
+   <br>
+   <b>toLocaleDateString</b>() - performs a transformation similar to the previous one, but with a date.
+   <p><br><br></p>
+  </div>
+ </body>
+</html>

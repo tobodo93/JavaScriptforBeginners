@@ -1,0 +1,17 @@
+<html>
+ <head></head>
+ <body>
+  The syntax of regular expressions contains a special character for determining the 
+  <b>alternative</b>, i.e. you can specify more than one variant of the template, the compliance of which will be checked. To separate alternatives, use the symbol "|" - vertical line.
+  <br>
+  <br>For example, expression
+  <pre><code class="language-javascript">/ma|pa|da/</code></pre>
+  <br>will match either "ma" or "pa" or "da".
+  <p>Alternatives of course can also be combined with classes and with repetitions. The template below corresponds to either two digits or two lowercase letters or two uppercase letters:<br></p>
+  <pre><code class="language-javascript">/\d{2}|[a-z]{2}|[A-Z]{2}/</code></pre>
+  <br>
+  <div>
+   It should be noted that alternatives are processed from left to right until the first match. After finding the first match, the remaining alternatives will be ignored. In practice, this means that, for example, the pattern /1|12|123/ applied to the string "123" will match the first character, although in alternatives there is a much more complete match.
+  </div>
+ </body>
+</html>

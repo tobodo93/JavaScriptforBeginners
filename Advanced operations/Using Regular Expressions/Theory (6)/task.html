@@ -1,0 +1,30 @@
+<html>
+ <head></head>
+ <body>
+  <p><b></b></p>There are only two
+  <b> methods for the RegExp</b> object:
+  <br>
+  <br>
+  <b>exec(text) </b>- performing a search on a string specified as a parameter returns an array of matches found.
+  <b></b>
+  <br>
+  <b>test(text)</b> - check the matching of the regular expression, return true \ false.
+  <br>
+  <br>The 
+  <b>exec ()</b> method executes a regular expression with respect to the argument string, the result of its operation is an array into which the matches come. If no match is found, the result is null. And if there is a match, it falls into the array with a zero element, with the lastIndex property of the object shifted to the position immediately following the found substring. Let's look at an example:
+  <pre><code class="language-javascript">var myString = "This is just a test text";  // Specify a string to search
+var myPattern = /te|is/g;                   // Create a template - either "te" or "is"
+
+result = myPattern.exec(myString);          
+
+//result will be equal to "is" - the first match of the pattern, the lastIndex property will be 4
+
+result = myPattern.exec(myString); //result == "is" - second pattern match, lastIndex == 7
+result = myPattern.exec(myString); //result == "te" - third pattern match, lastIndex == 17
+result = myPattern.exec(myString); //result == "te" - fourth pattern match, lastIndex == 22</code></pre> 
+  <br>
+  <p>In this example, we call the exec () method four times in a row, each time it shifts the search start pointer to the position that follows the match found and assigns the result itself to the match found.</p>
+  <p><br></p>
+  <p><br></p>
+ </body>
+</html>

@@ -1,0 +1,21 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: The RegExp object constructor can accept either one or two arguments
+- text: The RegExp object constructor converts a regular expression to a string
+- text: The test () method shifts the pointer to the start point of the search "lastindex"
+    to 0 every time after a successful search
+- text: The RegExp object has five properties
+- text: If no matches are found, exec () returns "Undefined"
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

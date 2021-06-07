@@ -1,0 +1,25 @@
+<html>
+ <head></head>
+ <body>
+  <p><b></b></p>Another possibility of regular expressions is the indication of the boundary of correspondence. For this, 
+  <b>anchor expressions</b> are used.
+  <br>
+  <br>Often we need to find a word that is on a separate line, or at the beginning of the line. Alternatively, you might need to find a single word, but just specify a template in which the word will be surrounded by spaces, we can not - the words will not get the words from which the lines begin or end. Also, the word boundary can be determined by any punctuation mark in the text and it is rather tedious to list all possible combinations in the template. Let's look at what special characters are used to define boundaries:
+  <br>
+  <br>
+  <b>^</b> - corresponds to the beginning of the line with a multi-line search or the beginning of a string expression
+  <br>
+  <b>$</b> - corresponds to the end of the line with a multi-line search or the end of a string expression
+  <br>
+  <b>\b</b> - corresponds to the word boundary, i.e. The position between the text (aA-zZ) and non-text character, or between the text character   and the beginning or end of the line.
+  <br>
+  <b>\B</b> - Corresponds to a position that is not a word boundary.
+  <br>
+  <b>(?=p</b>) - Positive forward checking for subsequent symbols - makes sure that subsequent characters match the pattern "p" but does not   
+  <b></b>include them in the search result.
+  <b></b>
+  <br>
+  <b>(?!p)</b> - Negative early check for subsequent symbols - requires that subsequent characters NOT match the pattern "p".
+  <p><br></p>
+ </body>
+</html>

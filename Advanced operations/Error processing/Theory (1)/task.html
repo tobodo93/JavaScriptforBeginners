@@ -1,0 +1,29 @@
+<html>
+ <head></head>
+ <body>
+  The syntax of the 
+  <b>throw </b>statement is as follows:
+  <br>
+  <br>
+  <pre><code class="language-javascript">throw expression;</code></pre>
+  <br>"
+  <i>Expression</i>" (or the result of its calculation) can represent almost any type of data: a string, a number, a Boolean value, an object. For example, a number that represents the error code, a string containing the error text.
+  <br>
+  <br>For example, the following example demonstrates checking the input parameter in a recursive function when evaluating:
+  <br>
+  <br>
+  <pre><code class="language-javascript">function testFactorial (inputData) {
+&nbsp; if (inputData &lt;0)                                // Check if the number is positive
+    throw "The number must not be less than zero"; // If negative, throw an exception
+
+&nbsp; return (inputData - 1)? (inputData * testFactorial (inputData - 1)): inputData;
+}</code></pre> 
+  <br>
+  <br>In this example, if a number less than 0 is applied to the input of the function, an error will be generated with the text "The number should not be less than zero" and the function will exit.
+  <br>If the input is correct, the factorial of the number fed to the input will be calculated.
+  <div></div>
+  <div>
+   <br>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+ <head></head>
+ <body>
+  <p>Let's now take a closer look at the work of the FOR loop.</p> 
+  <pre><code class="language-javascript">for (i = 1; i &lt;3; i = i + 1) {
+&nbsp; console.log ("i =" + i);
+}</code></pre> 
+  <p><br> In the first line, we set the parameters of the loop:</p> 
+  <pre><code class="language-javascript">i = 1 // Set the value from which the account will start.
+i &lt;3 // We specify a condition that will be checked for each loop (usually say - every iteration)
+i = i + 1 // Specify how the counter will change at each next iteration - increase by 1</code></pre> 
+  <p><br> In curly braces, we write the body of the cycle - the code that will be executed with every repetition of the loop, while our condition is true.</p> 
+  <pre><code class="language-javascript">{
+&nbsp; console.log ("i =" + i); // The body of loop. In our case - output to the console of the text "i =" and the value of the variable i
+}</code></pre> 
+  <p><br> <br> In this example, the following actions occur:<br> <br> <span style="color: #66cc66;">Set the initial value</span><br> 1. The variable i gets the value "1"<br> <br> <span style="color: #66cc66;">The first iteration</span><br> 2. The condition is checked that i is less than 3<br> 3. Since i is now 1, i.e. less than 3, then the loop body is executed, in our example, the variable i is displayed.<br> 4. The variable i increases by 1 and its value&nbsp;becomes 2.<br> <br> <span style="color: #66cc66;">The second iteration</span><br> 5. The condition is checked that i is less than 3<br> 6. Since i is 2, i.e. less than 3, then the loop body is executed - the variable i is displayed.<br> 7. The variable i increases by 1 and its value&nbsp;becomes 3<br> <br> <span style="color: #66cc66;">The third iteration</span><br> 8. The condition is checked that i is less than 3<br> 9. Since i is 3, i.e. the condition i &lt;3 ceases to be true, the work of the loop is completed.<br> <br> The algorithm for executing such a loop can be clearly seen in this picture:</p> 
+  <p>&nbsp;</p> 
+  <p>&nbsp;</p> 
+  <p>&nbsp;</p> 
+  <p style="text-align: center;"><img alt="" src="https://ucarecdn.com/a9abd46b-5f96-488a-8e87-ce81b967de9f/"></p>
+ </body>
+</html>

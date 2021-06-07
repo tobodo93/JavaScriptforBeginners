@@ -1,0 +1,34 @@
+<html>
+ <head></head>
+ <body>
+  <p>Let's look at example.</p>
+  <br>
+  <pre><code class="language-javascript">function greetPirate(pirateName) {            // Declaring a Parent Function
+  var greeting = "Hello ";
+
+&nbsp; function checkCaptain() {                   // Closure declaration
+    if (pirateName != "Jack Sparrow") 
+&nbsp; &nbsp; &nbsp; return greeting + pirateName;
+&nbsp; &nbsp; else 
+&nbsp; &nbsp; &nbsp; return greeting + "CAPTAIN " + pirateName + "!";
+  }
+
+&nbsp; return checkCaptain();
+}</code></pre> 
+  <br>
+  <br>In this example, we wrote a function that gives a greeting to the pirate - adds "Hello" to the name that is fed to the input. Inside this function, we created a "checkCaptain" closure
+  <i></i> that checks the input parameter of the parent function - if the name of the pirate is "Jack Sparrow", the closure adds the word "CAPTAIN" to the name and for Captain Jack Sparrow displays a personal greeting "Hello CAPTAIN Jack Sparrow". 
+  <div>
+   <br>
+  </div>
+  <div>
+   As a result, when you call, we get the following result:
+   <div></div>
+   <div>
+    <pre><code class="language-javascript">console.log(greetPirate("Mad Dog")); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Will return to console "Hello Mad Dog"
+console.log(greetPirate("Jack Sparrow")); &nbsp; &nbsp;    // Will return to console "Hello CAPTAIN Jack Sparrow!"</code></pre> 
+    <br>
+   </div>
+  </div>
+ </body>
+</html>

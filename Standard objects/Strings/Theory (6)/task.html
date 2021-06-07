@@ -1,0 +1,64 @@
+<html>
+ <head></head>
+ <body>
+  <b>Find a substring in a string</b>
+  <br>
+  <br>
+  <b>indexOf</b> (searchValue [, fromIndex]) - searches for a searchValue substring starting from the fromIndex position
+  <br>
+  <b>lastIndexOf </b>(searchValue [, fromIndex]) - searches for the last substring of searchValue starting from fromIndex
+  <br>
+  <b>search </b>(regExp) - checks whether there is a match with the argument, the result is true or false
+  <br>
+  <b>match </b>(regExp) - returns an array of all matches with an argument
+  <br>
+  <br>
+  <br>First, lets work with 
+  <b>indexOf </b>(searchValue [, fromIndex])
+  <br>
+  <br>
+  <br>
+  <pre><code class="language-javascript">var myString = "This is just a test string!";
+console.log (myString.indexOf ("is", 0));</code></pre> 
+  <br>In this case, the console will display the position number with which the first found substring "is" - 2 begins.
+  <br>"Th
+  <b>is</b> is just a test string!";
+  <br>
+  <br>
+  <br>However, if we specify the method to look for a substring not from the very beginning, but, for example, from the 3rd position:
+  <br>
+  <br>
+  <br>
+  <pre><code class="language-javascript">console.log (myString.indexOf ("is", 3));</code></pre>
+  <br>Then the result will be "5" - the position with which the second occurrence of the substring "is" begins.
+  <br>"This 
+  <b>is</b> just a test string!";
+  <br>
+  <br>The 
+  <b>lastIndexOf</b> (searchValue [, fromIndex]) method works similarly, but returns the number from which the last occurrence of the searched substring begins. 
+  <b>fromIndex </b>denotes the place from which to start the search towards the beginning of the line, its default value is the length of the string. In the example:
+  <br>
+  <br>
+  <br>
+  <pre><code class="language-javascript">var myString = "This is just a test string!";
+console.log (myString.lastIndexOf ("is"));</code></pre> 
+  <br>the number 5 - the beginning of the last occurrence of the substring "is" will be displayed in the console.
+  <br>
+  <br>The methods 
+  <b>search </b>(regExp) and 
+  <b>match</b> (regExp) here we indicated for completeness of the enumeration, their work will be considered in the next module, after learning the work with regular expressions.
+  <div>
+   <div>
+    <div>
+     <div>
+      <div>
+       <div>
+        <p><br></p> 
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

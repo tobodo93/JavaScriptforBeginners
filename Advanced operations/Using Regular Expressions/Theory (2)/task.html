@@ -1,0 +1,20 @@
+<html>
+ <head></head>
+ <body>
+  The next method that interests us is 
+  <b>match().</b>
+  <br>
+  <br>It takes as an argument a regular expression (or converts an argument to it like the previous methods), and returns the 
+  <b>array </b>of all matches found as the result.
+  <pre><code class="language-javascript">var myString = "Grandfather in the village had 12 apple trees, 5 currant bushes, 10 hens and 33 cows";
+result = myString.match(/\d{2}/g);</code></pre>
+  <div></div>In this example, we wrote out the notation of the digit "\ d" in the regular expression, indicated that we were looking for its double repetition "{2}" and included the global search flag "g". As a result, the result variable will be an array [12, 10, 33]. 
+  <div>
+   <br>
+  </div>
+  <div>
+   However, if the global search flag is not specified, only the first match will be added to the array, it will be written by the zero element. The remaining elements of the array are substrings corresponding to all subexpressions, if any.
+   <div></div>
+  </div>
+ </body>
+</html>

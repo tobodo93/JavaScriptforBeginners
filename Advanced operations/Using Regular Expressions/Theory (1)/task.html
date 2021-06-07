@@ -1,0 +1,37 @@
+<html>
+ <head></head>
+ <body>
+  The following method, with which we get acquainted, is 
+  <b>replace()</b>
+  <br>
+  <br>With it, you can perform a 
+  <b>replace</b> operation.
+  <br>As arguments, it takes a regular expression and a replacement string.
+  <pre><code class="language-javascript">var myString = "This is just test string";
+result = myString.replace(/is/,"as");</code></pre> 
+  <br>This example will replace the first match found with the pattern ("is") with the substring "as", resulting in the result variable in the result string 
+  <i>"Th<span style="color: #ff4363;">as</span> is just test string"</i>. 
+  <div>
+   <br>
+  </div>
+  <div>
+   It should be noted that this method supports global search and when using the flag "g" it will change all the matches found.
+   <pre><code class="language-javascript">var myString = "This is just test string";
+result = myString.replace(/is/g,"us");</code></pre> 
+   <br>In this example, the variable result is a string 
+   <i>"Th<span style="color: #ff4363;">us us</span> just test string"</i>.
+   <br>
+   <br>It should also be noted that as a second argument to the replace() method, a 
+   <b>function </b>can be used, in which case we will be able to dynamically change the replacement string. 
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   If the first argument is
+   <b> not a regular expression</b>, it will be the same as the search() method is converted to a regular expression using the RegExp constructor. And if you forget to specify the second argument at all, then all the found matches will be replaced by 
+   <code>undefined</code>.
+   <p><i></i></p>
+  </div>
+ </body>
+</html>

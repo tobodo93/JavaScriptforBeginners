@@ -1,0 +1,46 @@
+<html>
+ <head></head>
+ <body>
+  <p><b></b></p>
+  <b>Merge and split strings</b>
+  <br>
+  <br>
+  <b>concat </b>(string1, string2, ..., stringN) - concatenates strings
+  <br>
+  <b>split </b>('separator') - splits strings into an array of substrings using the specified delimiter
+  <br>
+  <br>
+  <b>Сoncat</b> is the union of strings.
+  <br>
+  <br>Example:
+  <br>
+  <br>
+  <pre><code class="language-javascript">var a = "first line ";
+var b = "second line ";
+var c = "third line";
+result = a.concat(b, c);</code></pre> 
+  <br>As a result, the value of the result variable becomes "first line second line third line"
+  <br>
+  <br>
+  <br>
+  <b>Split </b>- splits a string into an array of values ​​by separator.
+  <br>
+  <br>
+  <br>
+  <pre><code class="language-javascript">var myString = "cat,dog,bird";
+var myArray = myString.split (',');</code></pre> 
+  <br>
+  <br>As a result, myArray array has three elements - ["cat", "dog", "bird"]
+  <br>The string is delimited by the comma, which, when divided into the final array, does not fall inside of array.
+  <br>If the delimiter is not found, or if we did not specify it, then there will be only one element in the result array - the whole line.
+  <br>
+  <br>The split method has one more optional parameter - the maximum number of elements in the array. All elements larger than the specified number will be discarded and will not appear in the final array.
+  <br>
+  <br>
+  <pre><code class="language-javascript">var myString = "cat:dog:bird";
+var myArray = myString.split (":", 2);</code></pre> 
+  <br>As a result, in myArray array there will be only two elements - ["cat", "dog"]
+  <br>
+  <br>
+ </body>
+</html>

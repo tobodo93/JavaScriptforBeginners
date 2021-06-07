@@ -1,0 +1,22 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: /www/
+- text: /\\/
+- text: ¯\_(ツ)_/¯
+- text: /\/\/\//
+- text: /WWW/
+- text: /\//
+- text: /\\\//
+- text: /\/\//
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

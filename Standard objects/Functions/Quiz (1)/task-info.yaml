@@ -1,0 +1,24 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: A function that has a name can call itself
+- text: Each function must have a name
+- text: When you call a function at the time of the definition, you can not pass an
+    argument to it
+- text: A recursive function is called that calculates the exchange difference
+- text: The return command that returns a result can be used in a function more than
+    once
+- text: The "return" command does not need to be used in a function
+- text: The function can be defined and immediately called within a single command
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

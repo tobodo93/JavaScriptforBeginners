@@ -1,0 +1,25 @@
+<html>
+ <head></head>
+ <body>
+  <p><b></b></p>The 
+  <b>test() method</b> executes a regular expression with respect to the argument string, the result of its operation is a logical value - true if there is a match, and false if not. The lastIndex property of the object as well as the exec () method will shift to the position immediately following the found substring.
+  <br>
+  <br>
+  <b>An important point!</b> If no match is found, lastIndex will be shifted to position 0 and the search can begin again.
+  <br>
+  <br>Let's look at the same example:
+  <pre><code class="language-javascript">var myString = "This is just a test text";  // Specify a string to search
+var myPattern = /te|is/g;                   // Create a template - either "te" or "is"
+
+result = myPattern.test(myString);          
+
+// result will be true, because the first match is found, the lastIndex property will be set to 4
+
+result = myPattern.test(myString); // result == true, lastIndex == 7
+result = myPattern.test(myString); // result == true, lastIndex == 17
+result = myPattern.test(myString); // result == true, lastIndex == 22
+result = myPattern.test(myString); // result == false, lastIndex == 0</code></pre> 
+  <br>
+  <p>In this example, we call the<b> test()</b> method four times in a row, each time it shifts the search start pointer to the position following the match found and assigns the result variable to the boolean value - true if a match is found and false - if not. In the last run, a match was not found, so the lastIndex pointer is set to 0.</p> 
+ </body>
+</html>

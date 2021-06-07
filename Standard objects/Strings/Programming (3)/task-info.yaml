@@ -1,0 +1,12 @@
+type: code
+custom_name: Programming
+files:
+- name: task.js
+  visible: true
+  text: |-
+    function testStr(a, b) {
+        //Put your code here
+    }
+  learner_created: false
+status: Unchecked
+record: -1

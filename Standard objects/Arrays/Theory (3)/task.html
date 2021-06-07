@@ -1,0 +1,46 @@
+<html>
+ <head></head>
+ <body>
+  <p><b></b></p>
+  <b>Adding the elements of an array.</b>
+  <br>
+  <br>As we have seen, the easiest way to 
+  <b>add an element to an array</b> is simply to assign a value to the new indexes. For example :
+  <br>
+  <br>
+  <pre><code class="language-javascript">myArray [4] = "Petrov";</code></pre>
+  <br>But we also have a special method - 
+  <b>push</b> ().
+  <br>For example:
+  <br>
+  <br>
+  <pre><code class="language-javascript">myArray.push ("Sidorov");</code></pre>
+  <br>Add a value to the end of the array, and the command
+  <br>
+  <br> 
+  <pre><code class="language-javascript">myArray.push ("Sidorov", 2);</code></pre>
+  <div>
+   <br>adds two elements at once to the end of the array - the string "Sidorov" and the number "2". The value returned by the method will contain the length (number of elements) of the resulting array.
+   <br>
+   <br>
+   <b>Add elements to the end of the array</b> can also be simply changing the property of the array length:
+   <br>
+   <br>
+   <pre><code class="language-javascript">myArray.length = 5;</code></pre>
+   <br>In this case, the number of elements in the array will increase, at the end of the array empty elements will be added.
+   <br>
+   <br>
+   <b>Add elements to the beginning of the array</b> using the 
+   <b>unshift</b>() method. For example:
+   <br>
+   <br>
+   <pre><code class="language-javascript">myArray.unshift ("Sergeev", "Dmitriev")</code></pre>
+   <br>will add two elements with the values ​​"Sergeev" and "Dmitriev" to the beginning of our array, the remaining elements will be moved to positions with higher indices. The unshift () method also returns the length of the resulting array. Thus the expression
+   <br>
+   <br>
+   <pre><code class="language-javascript">x = myArray.unshift ("Sergeev", "Dmitriev")</code></pre>
+   <br>puts two new elements at the beginning of the array myArray and assigns the value of x to 7 (Because the previous command, we set the size of the array - 5)
+   <p><br><br></p>
+  </div>
+ </body>
+</html>

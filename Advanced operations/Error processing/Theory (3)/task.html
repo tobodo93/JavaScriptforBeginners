@@ -1,0 +1,30 @@
+<html>
+ <head></head>
+ <body>
+  Let's look at an example using the testFactorial() function, created during this lesson.
+  <br>
+  <br>
+  <pre><code class="language-javascript">// Declaration of the function
+function testFactorial (inputData) {
+
+&nbsp; if (inputData &lt;0)                                      // Check if the number is positive
+&nbsp; &nbsp; throw "The number must not be less than zero";       // If negative, throw an exception
+
+&nbsp; return (inputData - 1)? (inputData * testFactorial (inputData - 1)): inputData;
+}
+
+
+
+// Initiate the variable for the input parameter, set it manually in this example
+var myNumber = -5;
+// start of error handling design
+try {
+&nbsp; document.write (testFactorial (myNumber));              // attempt to call a function
+} catch (ex) {          
+&nbsp; document.write (ex); // if an exception occurs in the function, the text will be displayed,
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // which we used in the parameter of the throw statement
+}</code></pre>
+  <br>
+  <br>In this example, we did not use the finally block, it does not need us here. If you remember, at least one of the finally and catch blocks can be used in the construction, both are optional.
+ </body>
+</html>

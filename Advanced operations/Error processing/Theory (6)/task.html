@@ -1,0 +1,25 @@
+<html>
+ <head></head>
+ <body>
+  For example, to use an object in a function from the previous example, we would need to write like this:
+  <br>
+  <br>
+  <pre><code class="language-javascript">// Declaration of the function
+function testFactorial (inputData) {
+&nbsp; if (inputData &lt;0)                                            // Check if the number is positive
+&nbsp; &nbsp; throw new Error ("The number must not be less than zero"); // Create and throw an Error object
+&nbsp; return (inputData - 1)? (inputData * testFactorial (inputData - 1)): inputData;
+}
+
+var myNumber = -5;
+
+try {
+&nbsp; &nbsp; document.write (testFactorial (myNumber));                  // attempt to call a function
+} catch (ex) {
+&nbsp; document.write (ex.message);                                  // output error message
+}</code></pre> 
+  <br>In this case, we intercepted the exception and output its message property into the document, to which we previously placed the text - "
+  <i>The number should not be less than zero</i>".
+  <p><br></p> 
+ </body>
+</html>

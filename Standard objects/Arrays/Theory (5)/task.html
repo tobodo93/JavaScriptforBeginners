@@ -1,0 +1,26 @@
+<html>
+ <head></head>
+ <body>
+  <p><strong>Some other methods of the Array class.</strong><br> <br> <strong>Array.join()</strong> - turns all the elements of the array into strings, combines them and returns the resulting string.<br> For example, if you look at the example from the previous step - an array of surnames, the command <em>myString = myArray.join();</em> will put the value "Ivanov, Petrov, Sidorov" in the string variable myString. By default, commas are used for the separation.<br> In an optional argument, you can specify a substring to be used to separate the values. For example: the command</p> 
+  <pre><em><code class="language-javascript">myString = myArray.join("_");</code></em></pre> 
+  <p>will put in the string variable myString the value "Ivanov_Petrov_Sidorov"</p> 
+  <p><br> <strong>Array.reverse()</strong> - changes the order of the elements in the array to the inverse and returns the already rearranged array.<br> For example, if you consider the previously declared array:</p> 
+  <pre><code class="language-javascript">var myArray = new Array ("Ivanov", "Petrov", "Sidorov", "Kuznetsov");</code></pre> 
+  <p><br> then the command</p> 
+  <pre><code class="language-javascript">console.log (myArray.reverse ());</code></pre> 
+  <p>will print to the console values ​​["Kuznetsov", "Sidorov", "Petrov", "Ivanov"].<br> <br> <strong>Array.sort()</strong> - sorts the elements in the source array and returns the sorted array. If the method is used without an argument (sorting function), the result will be sorted alphabetically (in the order of the characters in Unicode), by converting everything that is possible to a string type. All that impossible convert to string - is placed at the end of the array. For example, using this method on an array from the previous example</p> 
+  <pre><code class="language-javascript">var myArray = new Array ("Ivanov", "Petrov", "Sidorov", "Kuznetsov");</code></pre> 
+  <p><br> will print an array of this kind to the console: [Ivanov, Kuznetsov, Petrov, Sidorov].<br> <br> As an argument to the <strong>sort</strong>() method, you can pass a comparison function. If the result returned by the comparison function is less than 0, then the sorting will put a before b, and vice versa. For example, to display values ​​sorted in reverse alphabetical order, we can use this command:</p> 
+  <pre><code class="language-javascript">console.log (myArray.sort (function (a, b) {return b - a;}));</code></pre> 
+  <p><br> <br> However, it should be noted that such a comparison function will only work if the elements of our array consist of digits. If we want to change the direction of sorting for string elements, the comparison function should look slightly different, for example like this:</p> 
+  <pre><code class="language-javascript">console.log (myArray.sort (function (a, b) {return b.localeCompare (a);}));</code></pre> 
+  <p><br> In this case, we used the <strong>localeCompare</strong>() method of the <strong>String</strong> object, which allows us to compare objects of type String or string literals.<br> <br> <strong>Array.concat</strong>() - returns (without changing the source) a new array with the addition of the elements passed to the method as an argument. For example,</p> 
+  <pre><code class="language-javascript">console.log (myArray.concat("Smith"));</code></pre> 
+  <p><br> will print to the console values ​​["Ivanov", "Kuznetsov", "Petrov", "Sidorov", "Smith"].</p> 
+  <p><strong>Array.slice</strong>() - returns the subarray from the array, from the first to the second arguments (but not including it).</p> 
+  <p>&nbsp;</p> 
+  <p>For example</p> 
+  <pre><code class="language-javascript">console.log (myArray.slice (1,3));</code></pre> 
+  <p><br> will print to the console output values ​​["Kuznetsov", "Petrov"], i.e. elements with indices 1 and 2.</p>
+ </body>
+</html>

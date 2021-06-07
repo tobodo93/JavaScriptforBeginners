@@ -1,0 +1,26 @@
+<html>
+ <head></head>
+ <body>
+  <p><b></b></p>
+  <b>To create an object with constructor</b>, we need to describe a function that will create an object and assign values ​​to its properties. The function will look like this:
+  <br>
+  <br>
+  <pre><code class="language-javascript">function Person (name, age, year) {
+&nbsp; this.name = name;
+&nbsp; this.age = age;
+&nbsp; this.year = year;
+}</code></pre> 
+  <br>
+  <br>Inside the function, we assign the data passed to the function through the expression 
+  <b>this</b> - accessing the current instance of the object. (We'll discuss this in more detail at the end of the lesson).
+  <br>
+  <br>
+  <b>Creating an instance of an object</b> using our constructor is done as follows:
+  <br>
+  <br>
+  <pre><code class="language-javascript">var employee1 = new Person ("Ivan", "25", "2017");
+var employee2 = new Person ("Olga", "21", "2016");
+var employee3 = new Person ("Oleg", "32", "2010");</code></pre> 
+  <br>It is important to note that the name of the constructor is usually written with a capital letter to mark that it is a constructor and it must be called with the keyword new. Otherwise, this in the body of the constructor will point to anything, not just the created object.
+ </body>
+</html>

@@ -1,0 +1,11 @@
+type: code
+files:
+- name: task.js
+  visible: true
+  text: |-
+    function testRegExp(s, sub_s) {
+
+    }
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,24 @@
+<html>
+ <head></head>
+ <body>
+  When defining a function after a keyword, there may be no name. Such functions are called "anonymous". For example, we can declare a function from the previous step in this way:
+  <br>
+  <br>
+  <pre><code class="language-javascript">var printText = function (a) {document.write (a);};</code></pre>
+  <br>
+  <br>The function can be called immediately with the required input parameter. In the following example, the function will be called at once - it will display the phrase "Hello World!". If the function were to return any result, it would be written to the variable printText.
+  <br>
+  <br>
+  <pre><code class="language-javascript">var printText = function (a) {document.write (a);} ("Hello World!");</code></pre>
+  <br>
+  <br>In order to indicate that the function is self-invoked, it is enclosed in brackets. This is not a requirement of the standard, but it is done for greater clarity.
+  <br>
+  <pre><code class="language-javascript">var printText = (function (a) {document.write (a);} ("Hello World!"));</code></pre>
+  <div> 
+   <br>
+  </div>
+  <div>
+   <br>
+  </div>
+ </body>
+</html>

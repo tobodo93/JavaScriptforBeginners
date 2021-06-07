@@ -1,0 +1,20 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: var myFunction = (function() {document.write(a)}; );
+- text: function myFunction {document.write("Hello world!"); };
+- text: function myFunction() { };
+- text: function %myFunction() {document.write("Hello World!"); };
+- text: var myFunction = function(a) {document.write(a); } ;
+- text: function Function(a) { document.write(a); };
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1

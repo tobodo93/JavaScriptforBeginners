@@ -1,0 +1,23 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: /qwerty/ for string "123qwerty456"
+- text: /[4-6]/ for string "123qwerty456"
+- text: /[^qwerty]/ for string "qwerty"
+- text: /\Q/ for string "qwerty"
+- text: /q/ for string "qwerty"
+- text: /[^qwerty]/ for string "123qwerty456"
+- text: /\d/ for string "123qwerty456"
+- text: /qwerty/ for string "qwerty"
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: task.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+status: Unchecked
+record: -1
+custom_name: Quiz

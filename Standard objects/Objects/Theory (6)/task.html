@@ -1,0 +1,23 @@
+<html>
+ <head></head>
+ <body>
+  <p><b></b></p>
+  <b>Adding a method</b> to an object is done using the following syntax:
+  <br>
+  <br>
+  <pre><code class="language-javascript">var person = {}                                // Declare object person
+person.sayAge = function (n) {                 // Declare the sayAge method for the person
+  console.log ("Person is" + n + "years old"); // Body of the sayAge method - text output
+};</code></pre> 
+  <br>In this example, when you call a function
+  <br>
+  <br>
+  <pre><code class="language-javascript">person.sayAge (22);</code></pre>
+  <br>The text "Person is 22 years old" will be output in the document.
+  <br>
+  <br>
+  <br>
+  <b>Adding a method</b> to an object is actually assigning a function to some property of the object. In the previous example, we assigned 
+  <i>function (n)</i> to the sayAge property of the person.
+ </body>
+</html>

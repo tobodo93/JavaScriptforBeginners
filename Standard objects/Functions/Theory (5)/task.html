@@ -1,0 +1,20 @@
+<html>
+ <head></head>
+ <body>
+  The 
+  <b>return</b> keyword can be used in the function more than once, and how many are needed. In the example below, you can see that the output from the function can be performed in different places of the function depending, for example, on the value of the input parameter:
+  <br>
+  <br>
+  <pre><code class="language-javascript">function divideOneTo (x) {
+&nbsp; if (x != 0) {
+&nbsp; &nbsp; return 1 / x;
+&nbsp; } else {
+&nbsp; &nbsp; return "You can not divide by zero!";
+&nbsp; }
+}</code></pre> 
+  <br>In this case, we made a function that returns the result of dividing the unit by the input parameter, if it is different from zero, or the phrase "You can not divide by zero!" - if we pass a zero to the function.
+  <br>
+  <br>However, the use of the 
+  <b>return</b> keyword is optional. If there is no return in the body of the function, then after executing all the commands, the interpreter will finish the function execution. The value this function returns is "undefined".
+ </body>
+</html>
